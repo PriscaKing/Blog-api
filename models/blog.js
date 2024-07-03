@@ -16,4 +16,4 @@ const blogSchema = new Schema({
 });
 
 blogSchema.plugin(toJSON);
-export const BlogModel = model('blogs', blogSchema);
+export const BlogModel = model('blog', blogSchema);
