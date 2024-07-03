@@ -24,7 +24,6 @@ dbconnection()
 
 
 //Listen for incoming requests 
-
-blog.listen(6000, () => {
-    console.log('Blog listening on port');
+const port = process.env.PORT || 6000; blog.listen(port, ()=>{
+    console.log(`App listening on port ${port}`);
 });
