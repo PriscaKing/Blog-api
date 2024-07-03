@@ -7,6 +7,7 @@ import 'dotenv/config'
 
 
 
+
 //Connect to database
 // await mongoose.connect(process.env.MONGO-URL)
 
@@ -19,6 +20,7 @@ blog.use(express.json());
 //use routes
 blog.use(blogRouter);
 dbconnection()
+
 
 
 //Listen for incoming requests 
